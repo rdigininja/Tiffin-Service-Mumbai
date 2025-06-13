@@ -1402,6 +1402,7 @@ header{
     padding: 100px 0;
     position: relative;
     background: url('../img/2148723492-min.webp') no-repeat center center/cover;
+    background-attachment: fixed; /* This makes the background image fixed */
     color: white;
     padding: 80px 20px;
     text-align: center;
@@ -1435,6 +1436,7 @@ header{
     letter-spacing: -0.5px;
     text-transform: capitalize;
     margin-bottom: 5px;
+    text-align: center;
     z-index: 11;
 }
 .timeline__cover .timeline__title p{

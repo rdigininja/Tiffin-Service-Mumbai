@@ -209,13 +209,13 @@
                                 <!-- <p class="delivery-note">*Delivery charges applicable</p> -->
 
                                 <button class="btn">Order Now</button>
-
+s
                             </div>
                         </div>
 
                     </div>
 
-                    <div class="col-md-6 col-lg-2 col-6">
+                    <div class="col-md-6 col-lg-2 col-6 p-1">
                         <div class="meal-card-box">
                             <div class="meal_img"><img src="img/meals/Regular veg mini_67bc396babc59.jpg" alt=""></div>
                             <div class="meal-body">
@@ -276,7 +276,7 @@
 
                     </div>
 
-                    <div class="col-md-6 col-lg-2 col-6">
+                    <div class="col-md-6 col-lg-2 col-6 p-1">
                         <div class="meal-card-box">
                             <div class="meal_img"><img src="img/meals/Regular veg mini_67bc396babc59.jpg" alt=""></div>
                             <div class="meal-body">
@@ -337,7 +337,7 @@
 
                     </div>
 
-                    <div class="col-md-6 col-lg-2 col-6">
+                    <div class="col-md-6 col-lg-2 col-6 p-1">
                         <div class="meal-card-box">
                             <div class="meal_img"><img src="img/meals/Regular veg mini_67bc396babc59.jpg" alt=""></div>
                             <div class="meal-body">
@@ -399,7 +399,7 @@
 
                     </div>
 
-                    <div class="col-md-6 col-lg-2 col-6">
+                    <div class="col-md-6 col-lg-2 col-6 p-1">
                         <div class="meal-card-box">
                             <div class="meal_img"><img src="img/meals/Regular veg mini_67bc396babc59.jpg" alt=""></div>
                             <div class="meal-body">
@@ -461,7 +461,7 @@
 
                     </div>
 
-                    <div class="col-md-6 col-lg-2 col-6">
+                    <div class="col-md-6 col-lg-2 col-6 p-1">
                         <div class="meal-card-box">
                             <div class="meal_img"><img src="img/meals/Regular veg mini_67bc396babc59.jpg" alt=""></div>
                             <div class="meal-body">
@@ -530,7 +530,7 @@
             <div id="nonvegetarian-plans" class="pricing-content">
                 <div class="row">
 
-                    <div class="col-md-6 col-lg-2 col-6">
+                    <div class="col-md-6 col-lg-2 col-6 p-1">
                         <div class="meal-card-box">
                             <div class="meal_img"><img src="img/meals/Regular veg mini_67bc396babc59.jpg" alt=""></div>
                             <div class="meal-body">
@@ -552,7 +552,7 @@
 
                     </div>
 
-                    <div class="col-md-6 col-lg-2 col-6">
+                    <div class="col-md-6 col-lg-2 col-6 p-1">
                         <div class="meal-card-box">
                             <div class="meal_img"><img src="img/meals/Regular veg mini_67bc396babc59.jpg" alt=""></div>
                             <div class="meal-body">
@@ -613,7 +613,7 @@
 
                     </div>
 
-                    <div class="col-md-6 col-lg-2 col-6">
+                    <div class="col-md-6 col-lg-2 col-6 p-1">
                         <div class="meal-card-box">
                             <div class="meal_img"><img src="img/meals/Regular veg mini_67bc396babc59.jpg" alt=""></div>
                             <div class="meal-body">
@@ -675,7 +675,7 @@
 
                     </div>
 
-                    <div class="col-md-6 col-lg-2 col-6">
+                    <div class="col-md-6 col-lg-2 col-6 p-1">
                         <div class="meal-card-box">
                             <div class="meal_img"><img src="img/meals/Regular veg mini_67bc396babc59.jpg" alt=""></div>
                             <div class="meal-body">
@@ -737,7 +737,7 @@
 
                     </div>
 
-                    <div class="col-md-6 col-lg-2 col-6">
+                    <div class="col-md-6 col-lg-2 col-6 p-1">
                         <div class="meal-card-box">
                             <div class="meal_img"><img src="img/meals/Regular veg mini_67bc396babc59.jpg" alt=""></div>
                             <div class="meal-body">
@@ -799,7 +799,7 @@
 
                     </div>
 
-                    <div class="col-md-6 col-lg-2 col-6">
+                    <div class="col-md-6 col-lg-2 col-6 p-1">
                         <div class="meal-card-box">
                             <div class="meal_img"><img src="img/meals/Regular veg mini_67bc396babc59.jpg" alt=""></div>
                             <div class="meal-body">
@@ -1553,7 +1553,29 @@
 
 
 
-<script>
+    <!-- jQuery (required for Owl Carousel) -->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:20,
+                nav:false,
+                dots:false,
+                autoplay:true,
+                autoplayTimeout:4000,
+                responsive:{
+                    0:{ items:1 },
+                    600:{ items:1 },
+                    1000:{ items:1 }
+                }
+            });
+        });
+    </script>
+
+    <script>
     $('.content').each( function(i){
   
     var bottom_of_object= $(this).offset().top + $(this).outerHeight();
@@ -1577,35 +1599,6 @@
     });
 
 </script>
-
-
-
-
-
-
-
-
-    <!-- jQuery (required for Owl Carousel) -->
-     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Owl Carousel JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('.owl-carousel').owlCarousel({
-                loop:true,
-                margin:20,
-                nav:false,
-                dots:false,
-                autoplay:true,
-                autoplayTimeout:4000,
-                responsive:{
-                    0:{ items:1 },
-                    600:{ items:1 },
-                    1000:{ items:1 }
-                }
-            });
-        });
-    </script>
 
     <script>
         function toggleFAQ(element) {
