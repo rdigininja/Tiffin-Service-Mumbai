@@ -1394,25 +1394,48 @@ header{
 
 /* =============================== */
 
+
+
 /*feature css starts*/
 .timeline__cover{
     background: #262e2b;
     padding: 100px 0;
-    color: #ffffff;
+    position: relative;
+    background: url('../img/2148723492-min.webp') no-repeat center center/cover;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    overflow: hidden;
+    z-index: 23;
 }
+
+.timeline__cover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* black shade */
+  z-index: 0;
+}
+
 .timeline__cover .timeline__title{
     max-width: 840px;
     margin: 0 auto;
     text-align: center;
     padding: 0 16px;
+    z-index: 11 !important;
 }
 .timeline__cover .timeline__title h2{
     font-size: 48px;
     font-weight: 600;
     line-height: 56px;
+    color: #fff;
     letter-spacing: -0.5px;
     text-transform: capitalize;
-    margin-bottom: 16px;
+    margin-bottom: 5px;
+    z-index: 11;
 }
 .timeline__cover .timeline__title p{
     font-size: 18px;
@@ -1423,6 +1446,7 @@ header{
 
 .timeline__cover .timeline{
     padding-top: 64px;
+    z-index: 1;
 }
 .timeline__cover .timeline ul{
     padding-top: 100px;
