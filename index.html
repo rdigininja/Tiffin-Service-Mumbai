@@ -11,8 +11,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-<!-- Font Awesome CDN for star ratings -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Awesome CDN for star ratings -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -173,6 +178,1404 @@
 </section>
 
 
+<section class="pricing-section">
+        <div class="container">
+            <div class="pricing-header">
+                <h2 class="txt_heading_2 mb-0">Meal Plans & Pricing</h2>
+            </div>
+
+            <div class="pricing-tabs">
+                <button class="pricing-tab active" onclick="showPlanType('vegetarian')">Vegetarian Plans</button>
+                <button class="pricing-tab" onclick="showPlanType('nonvegetarian')">Non-Vegetarian Plans</button>
+            </div>
+
+            <!-- Vegetarian Meals -->
+            <div id="vegetarian-plans" class="pricing-content active">
+                <div class="row">
+
+                    <div class="col-md-6 col-lg-2 col-6">
+                        <div class="meal-card-box">
+                            <div class="meal_img"><img src="img/meals/regular mini.png" alt=""></div>
+                            <div class="meal-body">
+                                <div class="meal-header">
+                                    <span class="meal-type" style="font-size: 14px;">MAKE YOUR OWN MEAL</span>
+                                    <span class="meal-price">Starting from ₹60</span>
+                                </div>
+
+                                <div class="meal-features">
+                                    <p>Select your favourite dishes from the available menus and plan your own meals.
+                                    </p>
+                                </div>
+                                <!-- <p class="delivery-note">*Delivery charges applicable</p> -->
+
+                                <button class="btn">Order Now</button>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 col-lg-2 col-6">
+                        <div class="meal-card-box">
+                            <div class="meal_img"><img src="img/meals/Regular veg mini_67bc396babc59.jpg" alt=""></div>
+                            <div class="meal-body">
+                                <div class="meal-header">
+                                    <span class="meal-type">Mini Meal (Veg)</span>
+                                    <span class="meal-price">₹90/meal</span>
+                                </div>
+
+                                <div class="meal-features">
+                                    <p>1 Vegetable Dish,1 Dal,2 Chapati,1 Salad</p>
+                                </div>
+                                <!-- <p class="delivery-note">*Delivery charges applicable</p> -->
+
+                                <div class="packages">
+                                    <!-- <div class="package">
+                                        <span class="package-name">1 Day Trial</span>
+                                        <div class="package-price">
+                                            <span class="discounted-price">₹80</span>
+                                            <span class="discount">Limited Offer</span>
+                                        </div>
+                                    </div> -->
+                                    <div class="package">
+                                        <span class="package-name">3 Days</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹270</span>
+                                            <span class="discounted-price">₹258</span>
+                                            <span class="discount">5% OFF</span>
+                                        </div>
+                                    </div>
+                                    <div class="package">
+                                        <span class="package-name">1 Week</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹630</span>
+                                            <span class="discounted-price">₹598</span>
+                                            <span class="discount">5% OFF</span>
+                                        </div>
+                                    </div>
+                                    <div class="package">
+                                        <span class="package-name">2 Weeks</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹1260</span>
+                                            <span class="discounted-price">₹1166</span>
+                                            <span class="discount">7% OFF</span>
+                                        </div>
+                                    </div>
+                                    <div class="package">
+                                        <span class="package-name">1 Month</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹2520</span>
+                                            <span class="discounted-price">₹2268</span>
+                                            <span class="discount">10% OFF</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn">Order Now</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 col-lg-2 col-6">
+                        <div class="meal-card-box">
+                            <div class="meal_img"><img src="img/meals/Regular veg mini_67bc396babc59.jpg" alt=""></div>
+                            <div class="meal-body">
+                                <div class="meal-header">
+                                    <span class="meal-type">Plus Meal (Veg)</span>
+                                    <span class="meal-price">₹120/meal</span>
+                                </div>
+
+                                <div class="meal-features">
+                                    <p>1 Vegetable Dish,1 Dal,3 Chapati,1 Rice,1 Salad/Soup</p>
+                                </div>
+                                <!-- <p class="delivery-note">*Delivery charges applicable</p> -->
+
+                                <div class="packages">
+                                    <!-- <div class="package">
+                                        <span class="package-name">1 Day Trial</span>
+                                        <div class="package-price">
+                                            <span class="discounted-price">₹110</span>
+                                            <span class="discount">Limited Offer</span>
+                                        </div>
+                                    </div> -->
+                                    <div class="package">
+                                        <span class="package-name">3 Days</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹360</span>
+                                            <span class="discounted-price">₹342</span>
+                                            <span class="discount">5% OFF</span>
+                                        </div>
+                                    </div>
+                                    <div class="package">
+                                        <span class="package-name">1 Week</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹840</span>
+                                            <span class="discounted-price">₹798</span>
+                                            <span class="discount">5% OFF</span>
+                                        </div>
+                                    </div>
+                                    <div class="package">
+                                        <span class="package-name">2 Weeks</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹1680</span>
+                                            <span class="discounted-price">₹1554</span>
+                                            <span class="discount">7% OFF</span>
+                                        </div>
+                                    </div>
+                                    <div class="package">
+                                        <span class="package-name">1 Month</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹3360</span>
+                                            <span class="discounted-price">₹3024</span>
+                                            <span class="discount">10% OFF</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn">Order Now</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 col-lg-2 col-6">
+                        <div class="meal-card-box">
+                            <div class="meal_img"><img src="img/meals/Regular veg mini_67bc396babc59.jpg" alt=""></div>
+                            <div class="meal-body">
+                                <div class="meal-header">
+                                    <span class="meal-type">Elite Meal (Veg)</span>
+                                    <span class="meal-price">₹150/meal</span>
+                                </div>
+
+                                <div class="meal-features">
+                                    <p>1 Gravy Vegetable,1 Dry Vegetable,1 Dal,4 Chapati,1 Rice,1 Salad/Soup,1 Dessert
+                                    </p>
+                                </div>
+                                <!-- <p class="delivery-note">*Delivery charges applicable</p> -->
+
+                                <div class="packages">
+                                    <!-- <div class="package">
+                                        <span class="package-name">1 Day Trial</span>
+                                        <div class="package-price">
+                                            <span class="discounted-price">₹140</span>
+                                            <span class="discount">Limited Offer</span>
+                                        </div>
+                                    </div> -->
+                                    <div class="package">
+                                        <span class="package-name">3 Days</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹450</span>
+                                            <span class="discounted-price">₹428</span>
+                                            <span class="discount">5% OFF</span>
+                                        </div>
+                                    </div>
+                                    <div class="package">
+                                        <span class="package-name">1 Week</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹1050</span>
+                                            <span class="discounted-price">₹998</span>
+                                            <span class="discount">5% OFF</span>
+                                        </div>
+                                    </div>
+                                    <div class="package">
+                                        <span class="package-name">2 Weeks</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹2100</span>
+                                            <span class="discounted-price">₹1943</span>
+                                            <span class="discount">7% OFF</span>
+                                        </div>
+                                    </div>
+                                    <div class="package">
+                                        <span class="package-name">1 Month</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹4200</span>
+                                            <span class="discounted-price">₹3780</span>
+                                            <span class="discount">10% OFF</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn">Order Now</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 col-lg-2 col-6">
+                        <div class="meal-card-box">
+                            <div class="meal_img"><img src="img/meals/Regular veg mini_67bc396babc59.jpg" alt=""></div>
+                            <div class="meal-body">
+                                <div class="meal-header">
+                                    <span class="meal-type">Diet Veg Elite Meal</span>
+                                    <span class="meal-price">₹276/meal</span>
+                                </div>
+
+                                <div class="meal-features">
+                                    <p>1 Saute Salad(100gms), 2 Multigrain Roti, 1 Low Cal Dal, 1 Low Cal Dry Veg, 1
+                                        Brown Rice, 1 Soup</p>
+                                </div>
+                                <!-- <p class="delivery-note">*Delivery charges applicable</p> -->
+
+                                <div class="packages">
+                                    <!-- <div class="package">
+                                        <span class="package-name">1 Day Trial</span>
+                                        <div class="package-price">
+                                            <span class="discounted-price">₹80</span>
+                                            <span class="discount">Limited Offer</span>
+                                        </div>
+                                    </div> -->
+                                    <div class="package">
+                                        <span class="package-name">3 Days</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹270</span>
+                                            <span class="discounted-price">₹258</span>
+                                            <span class="discount">5% OFF</span>
+                                        </div>
+                                    </div>
+                                    <div class="package">
+                                        <span class="package-name">1 Week</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹630</span>
+                                            <span class="discounted-price">₹598</span>
+                                            <span class="discount">5% OFF</span>
+                                        </div>
+                                    </div>
+                                    <div class="package">
+                                        <span class="package-name">2 Weeks</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹1260</span>
+                                            <span class="discounted-price">₹1166</span>
+                                            <span class="discount">7% OFF</span>
+                                        </div>
+                                    </div>
+                                    <div class="package">
+                                        <span class="package-name">1 Month</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹2520</span>
+                                            <span class="discounted-price">₹2268</span>
+                                            <span class="discount">10% OFF</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn">Order Now</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 col-lg-2 col-6">
+                        <div class="meal-card-box">
+                            <div class="meal_img"><img src="img/meals/Regular veg mini_67bc396babc59.jpg" alt=""></div>
+                            <div class="meal-body">
+                                <div class="meal-header">
+                                    <span class="meal-type">High Protein Veg Elite Meal</span>
+                                    <span class="meal-price">₹360/meal</span>
+                                </div>
+
+                                <div class="meal-features">
+                                    <p>2 Multigrain Roti, 1 Low Cal Dal, 1 Low Cal Dry Veg, 1 Brown Rice, 1 Saute
+                                        Salad(200gms), 1 Low Cal Veg Starter (200grm), 1 Soup</p>
+                                </div>
+                                <!-- <p class="delivery-note">*Delivery charges applicable</p> -->
+
+                                <div class="packages">
+                                    <!-- <div class="package">
+                                        <span class="package-name">1 Day Trial</span>
+                                        <div class="package-price">
+                                            <span class="discounted-price">₹80</span>
+                                            <span class="discount">Limited Offer</span>
+                                        </div>
+                                    </div> -->
+                                    <div class="package">
+                                        <span class="package-name">3 Days</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹270</span>
+                                            <span class="discounted-price">₹258</span>
+                                            <span class="discount">5% OFF</span>
+                                        </div>
+                                    </div>
+                                    <div class="package">
+                                        <span class="package-name">1 Week</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹630</span>
+                                            <span class="discounted-price">₹598</span>
+                                            <span class="discount">5% OFF</span>
+                                        </div>
+                                    </div>
+                                    <div class="package">
+                                        <span class="package-name">2 Weeks</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹1260</span>
+                                            <span class="discounted-price">₹1166</span>
+                                            <span class="discount">7% OFF</span>
+                                        </div>
+                                    </div>
+                                    <div class="package">
+                                        <span class="package-name">1 Month</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹2520</span>
+                                            <span class="discounted-price">₹2268</span>
+                                            <span class="discount">10% OFF</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn">Order Now</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Non-Vegetarian Meals -->
+            <div id="nonvegetarian-plans" class="pricing-content">
+                <div class="row">
+
+                    <div class="col-md-6 col-lg-2 col-6">
+                        <div class="meal-card-box">
+                            <div class="meal_img"><img src="img/meals/Regular veg mini_67bc396babc59.jpg" alt=""></div>
+                            <div class="meal-body">
+                                <div class="meal-header">
+                                    <span class="meal-type" style="font-size: 14px;">MAKE YOUR OWN MEAL</span>
+                                    <span class="meal-price">Starting from ₹60</span>
+                                </div>
+
+                                <div class="meal-features">
+                                    <p>Select your favourite dishes from the available menus and plan your own meals.
+                                    </p>
+                                </div>
+                                <!-- <p class="delivery-note">*Delivery charges applicable</p> -->
+
+                                <button class="btn">Order Now</button>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 col-lg-2 col-6">
+                        <div class="meal-card-box">
+                            <div class="meal_img"><img src="img/meals/Regular veg mini_67bc396babc59.jpg" alt=""></div>
+                            <div class="meal-body">
+                                <div class="meal-header">
+                                    <span class="meal-type">Mini Meal (Non-Veg)</span>
+                                    <span class="meal-price">₹110/meal</span>
+                                </div>
+
+                                <div class="meal-features">
+                                    <p>1 Chicken Curry,1 Dal,2 Chapati,1 Salad</p>
+                                </div>
+                                <!-- <p class="delivery-note">*Delivery charges applicable</p> -->
+
+                                <div class="packages">
+                                    <!-- <div class="package">
+                                        <span class="package-name">1 Day Trial</span>
+                                        <div class="package-price">
+                                            <span class="discounted-price">₹100</span>
+                                            <span class="discount">Limited Offer</span>
+                                        </div>
+                                    </div> -->
+                                    <div class="package">
+                                        <span class="package-name">3 Days</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹330</span>
+                                            <span class="discounted-price">₹314</span>
+                                            <span class="discount">5% OFF</span>
+                                        </div>
+                                    </div>
+                                    <div class="package">
+                                        <span class="package-name">1 Week</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹770</span>
+                                            <span class="discounted-price">₹732</span>
+                                            <span class="discount">5% OFF</span>
+                                        </div>
+                                    </div>
+                                    <div class="package">
+                                        <span class="package-name">2 Weeks</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹1540</span>
+                                            <span class="discounted-price">₹1425</span>
+                                            <span class="discount">7% OFF</span>
+                                        </div>
+                                    </div>
+                                    <div class="package">
+                                        <span class="package-name">1 Month</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹3080</span>
+                                            <span class="discounted-price">₹2772</span>
+                                            <span class="discount">10% OFF</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn">Order Now</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 col-lg-2 col-6">
+                        <div class="meal-card-box">
+                            <div class="meal_img"><img src="img/meals/Regular veg mini_67bc396babc59.jpg" alt=""></div>
+                            <div class="meal-body">
+                                <div class="meal-header">
+                                    <span class="meal-type">Elite Meal (Non-Veg)</span>
+                                    <span class="meal-price">₹170/meal</span>
+                                </div>
+
+                                <div class="meal-features">
+                                    <p>1 Chicken Gravy,1 Egg/Paneer Dish,1 Dal,4 Chapati,1 Rice, Salad/Soup,1 Dessert
+                                    </p>
+                                </div>
+                                <!-- <p class="delivery-note">*Delivery charges applicable</p> -->
+
+                                <div class="packages">
+                                    <!-- <div class="package">
+                                        <span class="package-name">1 Day Trial</span>
+                                        <div class="package-price">
+                                            <span class="discounted-price">₹160</span>
+                                            <span class="discount">Limited Offer</span>
+                                        </div>
+                                    </div> -->
+                                    <div class="package">
+                                        <span class="package-name">3 Days</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹510</span>
+                                            <span class="discounted-price">₹485</span>
+                                            <span class="discount">5% OFF</span>
+                                        </div>
+                                    </div>
+                                    <div class="package">
+                                        <span class="package-name">1 Week</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹1190</span>
+                                            <span class="discounted-price">₹1131</span>
+                                            <span class="discount">5% OFF</span>
+                                        </div>
+                                    </div>
+                                    <div class="package">
+                                        <span class="package-name">2 Weeks</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹2380</span>
+                                            <span class="discounted-price">₹2202</span>
+                                            <span class="discount">7% OFF</span>
+                                        </div>
+                                    </div>
+                                    <div class="package">
+                                        <span class="package-name">1 Month</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹4760</span>
+                                            <span class="discounted-price">₹4284</span>
+                                            <span class="discount">10% OFF</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn">Order Now</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 col-lg-2 col-6">
+                        <div class="meal-card-box">
+                            <div class="meal_img"><img src="img/meals/Regular veg mini_67bc396babc59.jpg" alt=""></div>
+                            <div class="meal-body">
+                                <div class="meal-header">
+                                    <span class="meal-type">Elite Meal (Veg)</span>
+                                    <span class="meal-price">₹150/meal</span>
+                                </div>
+
+                                <div class="meal-features">
+                                    <p>1 Gravy Vegetable,1 Dry Vegetable,1 Dal,4 Chapati,1 Rice,1 Salad/Soup,1 Dessert
+                                    </p>
+                                </div>
+                                <!-- <p class="delivery-note">*Delivery charges applicable</p> -->
+
+                                <div class="packages">
+                                    <!-- <div class="package">
+                                        <span class="package-name">1 Day Trial</span>
+                                        <div class="package-price">
+                                            <span class="discounted-price">₹140</span>
+                                            <span class="discount">Limited Offer</span>
+                                        </div>
+                                    </div> -->
+                                    <div class="package">
+                                        <span class="package-name">3 Days</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹450</span>
+                                            <span class="discounted-price">₹428</span>
+                                            <span class="discount">5% OFF</span>
+                                        </div>
+                                    </div>
+                                    <div class="package">
+                                        <span class="package-name">1 Week</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹1050</span>
+                                            <span class="discounted-price">₹998</span>
+                                            <span class="discount">5% OFF</span>
+                                        </div>
+                                    </div>
+                                    <div class="package">
+                                        <span class="package-name">2 Weeks</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹2100</span>
+                                            <span class="discounted-price">₹1943</span>
+                                            <span class="discount">7% OFF</span>
+                                        </div>
+                                    </div>
+                                    <div class="package">
+                                        <span class="package-name">1 Month</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹4200</span>
+                                            <span class="discounted-price">₹3780</span>
+                                            <span class="discount">10% OFF</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn">Order Now</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 col-lg-2 col-6">
+                        <div class="meal-card-box">
+                            <div class="meal_img"><img src="img/meals/Regular veg mini_67bc396babc59.jpg" alt=""></div>
+                            <div class="meal-body">
+                                <div class="meal-header">
+                                    <span class="meal-type">Diet Veg Elite Meal</span>
+                                    <span class="meal-price">₹276/meal</span>
+                                </div>
+
+                                <div class="meal-features">
+                                    <p>1 Saute Salad(100gms), 2 Multigrain Roti, 1 Low Cal Dal, 1 Low Cal Dry Veg, 1
+                                        Brown Rice, 1 Soup</p>
+                                </div>
+                                <!-- <p class="delivery-note">*Delivery charges applicable</p> -->
+
+                                <div class="packages">
+                                    <!-- <div class="package">
+                                        <span class="package-name">1 Day Trial</span>
+                                        <div class="package-price">
+                                            <span class="discounted-price">₹80</span>
+                                            <span class="discount">Limited Offer</span>
+                                        </div>
+                                    </div> -->
+                                    <div class="package">
+                                        <span class="package-name">3 Days</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹270</span>
+                                            <span class="discounted-price">₹258</span>
+                                            <span class="discount">5% OFF</span>
+                                        </div>
+                                    </div>
+                                    <div class="package">
+                                        <span class="package-name">1 Week</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹630</span>
+                                            <span class="discounted-price">₹598</span>
+                                            <span class="discount">5% OFF</span>
+                                        </div>
+                                    </div>
+                                    <div class="package">
+                                        <span class="package-name">2 Weeks</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹1260</span>
+                                            <span class="discounted-price">₹1166</span>
+                                            <span class="discount">7% OFF</span>
+                                        </div>
+                                    </div>
+                                    <div class="package">
+                                        <span class="package-name">1 Month</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹2520</span>
+                                            <span class="discounted-price">₹2268</span>
+                                            <span class="discount">10% OFF</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn">Order Now</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 col-lg-2 col-6">
+                        <div class="meal-card-box">
+                            <div class="meal_img"><img src="img/meals/Regular veg mini_67bc396babc59.jpg" alt=""></div>
+                            <div class="meal-body">
+                                <div class="meal-header">
+                                    <span class="meal-type">High Protein Veg Elite Meal</span>
+                                    <span class="meal-price">₹360/meal</span>
+                                </div>
+
+                                <div class="meal-features">
+                                    <p>2 Multigrain Roti, 1 Low Cal Dal, 1 Low Cal Dry Veg, 1 Brown Rice, 1 Saute
+                                        Salad(200gms), 1 Low Cal Veg Starter (200grm), 1 Soup</p>
+                                </div>
+                                <!-- <p class="delivery-note">*Delivery charges applicable</p> -->
+
+                                <div class="packages">
+                                    <!-- <div class="package">
+                                        <span class="package-name">1 Day Trial</span>
+                                        <div class="package-price">
+                                            <span class="discounted-price">₹80</span>
+                                            <span class="discount">Limited Offer</span>
+                                        </div>
+                                    </div> -->
+                                    <div class="package">
+                                        <span class="package-name">3 Days</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹270</span>
+                                            <span class="discounted-price">₹258</span>
+                                            <span class="discount">5% OFF</span>
+                                        </div>
+                                    </div>
+                                    <div class="package">
+                                        <span class="package-name">1 Week</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹630</span>
+                                            <span class="discounted-price">₹598</span>
+                                            <span class="discount">5% OFF</span>
+                                        </div>
+                                    </div>
+                                    <div class="package">
+                                        <span class="package-name">2 Weeks</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹1260</span>
+                                            <span class="discounted-price">₹1166</span>
+                                            <span class="discount">7% OFF</span>
+                                        </div>
+                                    </div>
+                                    <div class="package">
+                                        <span class="package-name">1 Month</span>
+                                        <div class="package-price">
+                                            <span class="original-price">₹2520</span>
+                                            <span class="discounted-price">₹2268</span>
+                                            <span class="discount">10% OFF</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn">Order Now</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+</section>
+
+<section class="timeline__cover">
+                <div class="timeline__title">
+                    <h2>How It Works</h2>
+                </div>
+                <div class="timeline">
+                    <ul>
+                        <li>
+                            <div class="content hidden" style="opacity: 1;">
+                                <div class="badge">STEP 1</div>
+                                <h3>Choose Your Plan</h3>
+                                <p>Select a subscription plan that fits your schedule and preferences.</p>  
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content hidden" style="opacity: 1;">
+                                <div class="badge">STEP 2</div>
+                                <h3>Select/Customize Your Meals</h3>
+                                <p>Mix and match dishes to create your perfect meal plan for the week.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content hidden" style="opacity: 1;">
+                                <div class="badge">STEP 3</div>
+                                <h3>Enjoy</h3>
+                                <p>Simple heat and enjoy your authentic Indian meal, hassle-free!</p>
+                            </div>
+                        </li>
+                    </ul>
+        </div>
+    </section>
+
+
+ <section>
+        <div class="container">
+            <div class="why_section">
+                <h2 class="why_title">Why Choose Us?</h2>
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-12">
+                        <div class="why_box">
+                            <div class="why-img"><img src="img/icon/balanced-diet - Copy.svg" alt=""></div>
+                            <div>
+                                <h3>Authentic Home-Style Cooking </h3>
+                                <p>Traditional recipes passed down through generations for that unforgettable taste of
+                                    home.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-12">
+                        <div class="why_box">
+                            <div class="why-img"><img src="img/icon/delivery-man (1).svg" alt=""></div>
+                            <div>
+                                <h3>Convenient, Hyperlocal Delivery </h3>
+                                <p>Daily delivery across Andheri, Powai, Marol, Worli, and BKC, ensuring hot meals,
+                                    right on time</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-12">
+                        <div class="why_box">
+                            <div class="why-img"><img src="img/icon/masala-dosa.svg" alt=""></div>
+                            <div>
+                                <h3>Affordable & Flexible Plans </h3>
+                                <p>Enjoy wholesome meals without breaking the bank. Plans start at just ₹XX/day!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-12">
+                        <div class="why_box">
+                            <div class="why-img"><img src="img/icon/stir-fry.svg" alt=""></div>
+                            <div>
+                                <h3>Hygienic & Sustainable</h3>
+                                <p>Meals prepared in a clean, safe environment and packed with eco-friendly materials.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-12">
+                        <div class="why_box">
+                            <div class="why-img"><img src="img/icon/cooking.svg" alt=""></div>
+                            <div>
+                                <h3>Customizable Meal Plans</h3>
+                                <p>Vegetarian, non-vegetarian, low-carb, or high-protein—we tailor every meal to suit
+                                    your needs.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-12">
+                        <div class="offer_box">
+                            <div class="offer-content">
+                                <span class="offer-badge">Special Offer</span>
+                                <h3 id="typing-heading">Try Us Today</h3>
+                            </div>
+                            <div class="offer-content1">
+                                <p class="offer-text"><span class="ani_offer">10% Off Your First Month </span></p>
+                                <button class="offer-btn">Claim Offer</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-6 col-12 p-0">
+                <div class="testi-main-img p-0">
+                    <img src="img/textmonial.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-12 p-0">
+                <div class="testimonial-main-box">
+
+                            <div class="test-head">
+                                <span>Customer</span>
+                                <h2>Testimonial</h2>
+                            </div>
+
+
+                            <div class="owl-carousel owl-theme owl-loaded owl-drag">
+                                <div class="owl-stage-outer">
+                                    <div class="owl-stage" style="transform: translate3d(-2114px, 0px, 0px); transition: 0.25s; width: 3384px;">
+                                        <div  iv class="owl-item cloned" style="width: 402.891px; margin-right: 20px;">
+                                            <div class="testimonial">
+                                                <div class="testimonial-header">
+                                                    <div class="">
+                                                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client 1">
+                                                    </div>
+                                                    <div class="test-details">
+                                                        <h4>John Doe</h4>
+                                                        <span>Software Engineer</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="testimonial-content">
+                                                    <span class="rating">
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                    </span>
+                                                    <p>"The tiffin service is amazing! The food is always fresh and delivered on time. Highly recommended.The tiffin service is amazing! The food is always fresh and delivered on time. Highly recommended.The tiffin service is amazing! The food is always fresh and delivered on time. Highly recommended."</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: 402.891px; margin-right: 20px;">
+                                            <div class="testimonial">
+                                                <div class="testimonial-header">
+                                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client 1">
+                                                    <div>
+                                                        <h4>John Doe</h4>
+                                                        <span>Software Engineer</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="testimonial-content">
+                                                    <span class="rating">
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                    </span>
+                                                    <p>"The tiffin service is amazing! The food is always fresh and delivered on time. Highly recommended.The tiffin service is amazing! The food is always fresh and delivered on time. Highly recommended."</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="owl-item" style="width: 402.891px; margin-right: 20px;">
+                                            <div class="testimonial">
+                                                <div class="testimonial-header">
+                                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client 1">
+                                                    <div>
+                                                        <h4>John Doe</h4>
+                                                        <span>Software Engineer</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="testimonial-content">
+                                                    <span class="rating">
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                    </span>
+                                                    <p>"The tiffin service is amazing! The food is always fresh and delivered on time. Highly recommended.The tiffin service is amazing! The food is always fresh and delivered on time. Highly recommended."</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="owl-item" style="width: 402.891px; margin-right: 20px;">
+                                            <div class="testimonial">
+                                                <div class="testimonial-header">
+                                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client 1">
+                                                    <div>
+                                                        <h4>John Doe</h4>
+                                                        <span>Software Engineer</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="testimonial-content">
+                                                    <span class="rating">
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                    </span>
+                                                    <p>"The tiffin service is amazing! The food is always fresh and delivered on time. Highly recommended.The tiffin service is amazing! The food is always fresh and delivered on time. Highly recommended."</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="owl-item" style="width: 402.891px; margin-right: 20px;">
+                                            <div class="testimonial">
+                                                <div class="testimonial-header">
+                                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client 1">
+                                                    <div>
+                                                        <h4>John Doe</h4>
+                                                        <span>Software Engineer</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="testimonial-content">
+                                                    <span class="rating">
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                    </span>
+                                                    <p>"The tiffin service is amazing! The food is always fresh and delivered on time. Highly recommended.The tiffin service is amazing! The food is always fresh and delivered on time. Highly recommended.The tiffin service is amazing! The food is always fresh and delivered on time. Highly recommended."</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="owl-item active" style="width: 402.891px; margin-right: 20px;">
+                                            <div class="testimonial">
+                                                <div class="testimonial-header">
+                                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client 1">
+                                                    <div>
+                                                        <h4>John Doe</h4>
+                                                        <span>Software Engineer</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="testimonial-content">
+                                                    <span class="rating">
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                    </span>
+                                                    <p>"The tiffin service is amazing! The food is always fresh and delivered on time. Highly recommended.The tiffin service is amazing! The food is always fresh and delivered on time. Highly recommended."</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="owl-item cloned" style="width: 402.891px; margin-right: 20px;">
+                                            <div class="testimonial">
+                                                <div class="testimonial-header">
+                                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client 1">
+                                                    <div>
+                                                        <h4>John Doe</h4>
+                                                        <span>Software Engineer</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="testimonial-content">
+                                                    <span class="rating">
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                    </span>
+                                                    <p>"The tiffin service is amazing! The food is always fresh and delivered on time. Highly recommended.The tiffin service is amazing! The food is always fresh and delivered on time. Highly recommended."</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="owl-item cloned" style="width: 402.891px; margin-right: 20px;">
+                                            <div class="testimonial">
+                                                <div class="testimonial-header">
+                                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client 1">
+                                                    <div>
+                                                        <h4>John Doe</h4>
+                                                        <span>Software Engineer</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="testimonial-content">
+                                                    <span class="rating">
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                    </span>
+                                                    <p>"The tiffin service is amazing! The food is always fresh and delivered on time. Highly recommended.The tiffin service is amazing! The food is always fresh and delivered on time. Highly recommended."</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="owl-nav disabled">
+                                    <button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button>
+                                    <button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button>
+                                </div>
+                                <div class="owl-dots">
+                                    <button role="button" class="owl-dot"><span></span></button>
+                                    <button role="button" class="owl-dot"><span></span></button>
+                                    <button role="button" class="owl-dot"><span></span></button>
+                                    <button role="button" class="owl-dot active"><span></span></button>
+                                </div>
+                            </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="txt_heading_2">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Everything you need to know about our service</p>
+
+            <div class="faq-container">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3> Which areas do you deliver to? </h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We deliver to Andheri, Powai, Worli, Marol, and BKC. Don’t see your location? Contact us for
+                            updates on delivery zones. </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What kind of food style do you prepare? </h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We specialize in crafting wholesome, home-style meals made with fresh, high-quality
+                            ingredients. Our menu offers a mix of traditional and contemporary dishes, ensuring there’s
+                            something for everyone. Whether you prefer classic comfort food, light and nutritious
+                            options, or exciting global flavors, we’ve got you covered. All meals are thoughtfully
+                            prepared with a focus on flavor, balance, and meeting dietary requirements.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What if I'm not satisfied with my meals? </h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer a 100% satisfaction guarantee. If you’re not happy with your first week, you'll
+                            receive a full refund, no questions asked.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>How do I subscribe? </h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can subscribe online in just a few clicks. Select your plan, customize your meals, and
+                            experience the taste of home. </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Do you offer free trials or discounts? </h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! New subscribers get their first week free and a 20% discount on the first month.
+                            Referrals and group discounts are also available. </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Where do you deliver in Mumbai? </h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We currently deliver to all major areas across Mumbai, including South Mumbai, Western
+                            Suburbs, Central Suburbs, and Navi Mumbai. Please check our delivery zone map on the website
+                            for specific locations.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 7 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What types of meals are offered? </h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer a variety of meal options, including vegetarian, non-vegetarian, and Jain meals. Our
+                            menus are curated to deliver fresh, homemade, and healthy food with a taste that reminds you
+                            of home.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 8 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Can I customize my meals? </h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we provide customization options to suit your dietary preferences or restrictions. You
+                            can choose your portion sizes, spice levels, or any specific ingredient exclusions during
+                            the subscription process.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 9 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Is the food fresh and hygienic? </h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! All our meals are prepared daily with fresh ingredients in a hygienic environment
+                            to ensure quality and safety. Our kitchens are regularly inspected and follow strict food
+                            safety guidelines.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 10 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>How do I pay for the service? </h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept multiple payment methods, including credit/debit cards, UPI, digital wallets, and
+                            net banking. You can select the payment option most convenient for you while subscribing
+                            online.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 11 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What kind of meals can I order? </h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our menu includes a variety of home-style vegetarian and non-vegetarian options. Healthy and
+                            premium meal choices are also available. </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Trust Badges -->
+            <div class="trust-badges">
+                <div class="badge">
+                    <i class="ti ti-certificate"></i>
+                    FSSAI Certified Kitchen
+                </div>
+                <div class="badge">
+                    <i class="ti ti-clock"></i>
+                    On-time Delivery Guarantee
+                </div>
+                <div class="badge">
+                    <i class="ti ti-star"></i>
+                    1000+ Happy Customers
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="delivery-section">
+        <div class="container">
+            <h2 class="txt_heading_2">Our Delivery Areas</h2>
+            <p class="section-subtitle">Serving fresh meals across Andheri and nearby areas</p>
+
+            <div class="delivery-container">
+                <div class="areas-list">
+                    <h3 class="areas-title">
+                        We Deliver To:
+                    </h3>
+                    <div class="areas-grid">
+                        <div class="area-item">
+                           <i class="ti ti-map-pin"></i>&nbsp;
+                            Chakala
+                        </div>
+                        <div class="area-item">
+                           <i class="ti ti-map-pin"></i>&nbsp;
+                            JB Nagar
+                        </div>
+                        <div class="area-item">
+                            <i class="ti ti-map-pin"></i>&nbsp;
+                            Marol Naka
+                        </div>
+                        <div class="area-item">
+                            <i class="ti ti-map-pin"></i>&nbsp;
+                            Sakinaka
+                        </div>
+                        <div class="area-item">
+                            <i class="ti ti-map-pin"></i>&nbsp;
+                            Asalpha
+                        </div>
+                        <div class="area-item">
+                            <i class="ti ti-map-pin"></i>&nbsp;
+                            Jagruti Nagar
+                        </div>
+                        <div class="area-item">
+                           <i class="ti ti-map-pin"></i>&nbsp;
+                            Andheri MIDC
+                        </div>
+                        <div class="area-item">
+                            <i class="ti ti-map-pin"></i>&nbsp;
+                            Chandivali
+                        </div>
+                        <div class="area-item">
+                            <i class="ti ti-map-pin"></i>&nbsp;
+                            Powai
+                        </div>
+                        <div class="area-item">
+                            <i class="ti ti-map-pin"></i>&nbsp;
+                            Kurla
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <!-- Embedded Google Map centered on Andheri East -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15082.47866579394!2d72.836319!3d19.1190037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9c676000000%3A0xcd5a1e5b4eaf4df5!2sAndheri%20East%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                    <div class="map-overlay">
+                        <i class="ti ti-alert-circle"></i>
+                        Free delivery within 5 km!
+                    </div>
+                </div>
+            </div>
+
+            <div class="delivery-info">
+                <p><i class="ti ti-clock"></i> <strong>Delivery Timings:</strong> Lunch by 12:30 PM | Dinner by 7:30 PM
+                </p>
+                <p><i class="ti ti-info-circle"></i> Additional charges may apply for areas beyond 5 km radius</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <h2 class="txt_heading_2">Ready for Homely Meals?</h2>
+            <p class="section-subtitle">Get started in just 2 minutes</p>
+
+            <div class="contact-container">
+                <!-- Quick Contact -->
+                <div class="quick-contact">
+                    <h3 style="color: #2c3e50; margin-bottom: 20px;">Quick Connect</h3>
+
+                    <div class="contact-methods">
+                        <!-- Phone -->
+                        <div class="contact-card" onclick="window.location.href='tel:+917208726943'">
+                            <div class="contact-icon">
+                                <i class="ti ti-phone"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h3>Call Us</h3>
+                                <p><a href="tel:+917208726943">+91 7208726943</a></p>
+                            </div>
+                        </div>
+
+                        <!-- WhatsApp -->
+                        <div class="contact-card" onclick="window.location.href='https://wa.me/917208726943'">
+                            <div class="contact-icon" style="background: #25D366;">
+                                <i class="ti ti-brand-whatsapp"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h3>WhatsApp</h3>
+                                <p><a href="https://wa.me/917208726943">Message us instantly</a></p>
+                            </div>
+                        </div>
+
+                        <!-- Address -->
+                        <div class="contact-card">
+                            <div class="contact-icon" style="background: #3498db;">
+                                <i class="ti ti-map-pin"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h3>Our Kitchen</h3>
+                                <p>Near Sakinaka Metro Station</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 30px; text-align: center;">
+                        <p><strong>Today's Special:</strong> Paneer Butter Masala + Jeera Rice</p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3 style="color: #2c3e50; margin-bottom: 20px;">Start Your Tiffin Service</h3>
+
+                    <form id="tiffinForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Mobile Number</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="Enter 10-digit number"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Meal Preference</label>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" id="veg" name="preference" value="veg" checked>
+                                    <label for="veg">Vegetarian</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="nonveg" name="preference" value="nonveg">
+                                    <label for="nonveg">Non-Vegetarian</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="plan">Select Plan</label>
+                            <select id="plan" class="form-control">
+                                <option value="">-- Choose Plan --</option>
+                                <option value="daily">Daily Tiffin (1 Meal)</option>
+                                <option value="monthly">Monthly Plan (Lunch+Dinner)</option>
+                                <option value="custom">Custom Plan</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <i class="ti ti-send" style="margin-right: 8px;"></i>
+                            Get Started Now
+                        </button>
+                    </form>
+
+                    <div class="guarantee-badge">
+                        <i class="ti ti-shield-check" style="color: #27ae60;"></i>
+                        <strong>Hygiene Guarantee:</strong> FSSAI Certified Kitchen | Daily Temperature Checks
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+<script>
+    $('.content').each( function(i){
+  
+    var bottom_of_object= $(this).offset().top + $(this).outerHeight();
+    var bottom_of_window = $(window).height();
+    
+    if( bottom_of_object > bottom_of_window){
+      $(this).addClass('hidden');
+    }
+    });
+    
+    
+    $(window).scroll( function(){
+        $('.hidden').each( function(i){
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+        
+            if( bottom_of_window > bottom_of_object ){
+                $(this).animate({'opacity':'1'},700);
+            }
+        });
+    });
+
+</script>
 
 
 
@@ -181,16 +1584,129 @@
 
 
 
+    <!-- jQuery (required for Owl Carousel) -->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:20,
+                nav:false,
+                dots:false,
+                autoplay:true,
+                autoplayTimeout:4000,
+                responsive:{
+                    0:{ items:1 },
+                    600:{ items:1 },
+                    1000:{ items:1 }
+                }
+            });
+        });
+    </script>
+
+    <script>
+        function toggleFAQ(element) {
+            const faqItem = element.parentElement;
+            const answer = faqItem.querySelector('.faq-answer');
+
+            // Toggle active class
+            faqItem.classList.toggle('active');
+
+            // Toggle answer visibility
+            if (faqItem.classList.contains('active')) {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+            } else {
+                answer.style.maxHeight = '0';
+            }
+
+            // Close other open FAQs
+            document.querySelectorAll('.faq-item').forEach(item => {
+                if (item !== faqItem && item.classList.contains('active')) {
+                    item.classList.remove('active');
+                    item.querySelector('.faq-answer').style.maxHeight = '0';
+                }
+            });
+        }
+    </script>
 
 
+    <script>
+            function showPlanType(planType) {
+                // Hide all plan contents
+                document.querySelectorAll('.pricing-content').forEach(content => {
+                    content.classList.remove('active');
+                });
 
+                // Remove active class from all buttons
+                document.querySelectorAll('.pricing-tab').forEach(tab => {
+                    tab.classList.remove('active');
+                });
 
+                // Show the selected plan content
+                document.getElementById(`${planType}-plans`).classList.add('active');
 
+                // Add active class to the clicked button
+                event.currentTarget.classList.add('active');
+            }
 
+            // Add hover effects to meal plans
+            document.querySelectorAll('.meal-plan').forEach(plan => {
+                plan.addEventListener('mouseenter', function () {
+                    this.style.transform = 'translateY(-5px)';
+                    this.style.boxShadow = '0 10px 25px rgba(0,0,0,0.15)';
+                });
 
+                plan.addEventListener('mouseleave', function () {
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+                });
+            });
 
+            // Initialize - show vegetarian plans by default
+            document.addEventListener('DOMContentLoaded', function () {
+                showPlanType('vegetarian');
+            });
+        </script>
 
+    <script>
+        function showPlanType(planType) {
+            // Hide all plan contents
+            document.querySelectorAll('.pricing-content').forEach(content => {
+                content.classList.remove('active');
+            });
 
+            // Remove active class from all buttons
+            document.querySelectorAll('.pricing-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            // Show the selected plan content
+            document.getElementById(`${planType}-plans`).classList.add('active');
+
+            // Add active class to the clicked button
+            event.currentTarget.classList.add('active');
+        }
+
+        // Add hover effects to meal plans
+        document.querySelectorAll('.meal-plan').forEach(plan => {
+            plan.addEventListener('mouseenter', function () {
+                this.style.transform = 'translateY(-5px)';
+                this.style.boxShadow = '0 10px 25px rgba(0,0,0,0.15)';
+            });
+
+            plan.addEventListener('mouseleave', function () {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+            });
+        });
+
+        // Initialize - show vegetarian plans by default
+        document.addEventListener('DOMContentLoaded', function () {
+            showPlanType('vegetarian');
+        });
+    </script>
 
 
 </body>
