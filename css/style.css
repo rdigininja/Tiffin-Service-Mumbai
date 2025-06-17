@@ -154,6 +154,33 @@ header{
 }
 
 
+.b1{
+    position: absolute;
+}
+
+.bb1{
+    width: 10%;
+    top: 30% ;
+    left: 2%;
+}
+.bb2{
+    width: 10%;
+    bottom: 2%;
+    left: 10%;
+}
+.bb21{
+    width: 6%;
+    top: 25%;
+    right:20%;
+}
+.bb3{
+    width:14%;
+    bottom: 5%;
+    right: 15%;
+}
+
+
+
 /* .reviews{
     display: flex;
 }
