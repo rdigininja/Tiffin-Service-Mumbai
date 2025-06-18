@@ -312,7 +312,7 @@ header{
 .main_banner_text h1{
     font-size: 30px;
     text-align: center;
-    width: 100%;
+    width: 100% !important;
 }
 .main_banner_text p{
     font-weight: 400;
