@@ -213,7 +213,7 @@
                                 </div>
                                 <!-- <p class="delivery-note">*Delivery charges applicable</p> -->
          
-                                <button class="btn">Order Now</button>
+                                <button id="openFormBtn" class="btn">Order Now</button>
                             </div>
                         </div>
 
@@ -274,7 +274,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="btn">Order Now</button>
+                                <button id="openFormBtn" class="btn">Order Now</button>
                             </div>
                         </div>
 
@@ -335,7 +335,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="btn">Order Now</button>
+                                <button id="openFormBtn" class="btn">Order Now</button>
                             </div>
                         </div>
 
@@ -397,7 +397,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="btn">Order Now</button>
+                                <button id="openFormBtn" class="btn">Order Now</button>
                             </div>
                         </div>
 
@@ -459,7 +459,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="btn">Order Now</button>
+                                <button id="openFormBtn" class="btn">Order Now</button>
                             </div>
                         </div>
 
@@ -521,7 +521,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="btn">Order Now</button>
+                                <button id="openFormBtn" class="btn">Order Now</button>
                             </div>
                         </div>
 
@@ -549,7 +549,7 @@
                                 </div>
                                 <!-- <p class="delivery-note">*Delivery charges applicable</p> -->
 
-                                <button class="btn">Order Now</button>
+                                <button id="openFormBtn" class="btn">Order Now</button>
 
                             </div>
                         </div>
@@ -611,7 +611,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="btn">Order Now</button>
+                                <button id="openFormBtn" class="btn">Order Now</button>
                             </div>
                         </div>
 
@@ -673,7 +673,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="btn">Order Now</button>
+                                <button id="openFormBtn" class="btn">Order Now</button>
                             </div>
                         </div>
 
@@ -735,7 +735,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="btn">Order Now</button>
+                                <button id="openFormBtn" class="btn">Order Now</button>
                             </div>
                         </div>
 
@@ -797,7 +797,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="btn">Order Now</button>
+                                <button id="openFormBtn" class="btn">Order Now</button>
                             </div>
                         </div>
 
@@ -859,7 +859,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="btn">Order Now</button>
+                                <button id="openFormBtn" class="btn">Order Now</button>
                             </div>
                         </div>
 
@@ -1499,60 +1499,102 @@
 
                 <!-- Contact Form -->
                 <div class="contact-form">
-                    <h3 style="color: #2c3e50; margin-bottom: 20px;">Start Your Tiffin Service</h3>
+                <h3 style="color: #2c3e50; margin-bottom: 20px;">Start Your Tiffin Service</h3>
 
-                    <form id="tiffinForm">
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="phone">Mobile Number</label>
-                            <input type="tel" id="phone" class="form-control" placeholder="Enter 10-digit number"
-                                required>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Meal Preference</label>
-                            <div class="radio-group">
-                                <div class="radio-option">
-                                    <input type="radio" id="veg" name="preference" value="veg" checked>
-                                    <label for="veg">Vegetarian</label>
-                                </div>
-                                <div class="radio-option">
-                                    <input type="radio" id="nonveg" name="preference" value="nonveg">
-                                    <label for="nonveg">Non-Vegetarian</label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="plan">Select Plan</label>
-                            <select id="plan" class="form-control">
-                                <option value="">-- Choose Plan --</option>
-                                <option value="daily">Daily Tiffin (1 Meal)</option>
-                                <option value="monthly">Monthly Plan (Lunch+Dinner)</option>
-                                <option value="custom">Custom Plan</option>
-                            </select>
-                        </div>
-
-                        <button type="submit" class="submit-btn">
-                            <i class="ti ti-send" style="margin-right: 8px;"></i>
-                            Get Started Now
-                        </button>
-                    </form>
-
-                    <div class="guarantee-badge">
-                        <i class="ti ti-shield-check" style="color: #27ae60;"></i>
-                        <strong>Hygiene Guarantee:</strong> FSSAI Certified Kitchen | Daily Temperature Checks
+                <form id="tiffinForm" action="tiffin-form-handler.php" method="POST">
+                    <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
                     </div>
+
+                    <div class="form-group">
+                    <label for="phone">Mobile Number</label>
+                    <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter 10-digit number" required>
+                    </div>
+
+                    <div class="form-group">
+                    <label>Meal Preference</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                        <input type="radio" id="veg" name="preference" value="Vegetarian" checked>
+                        <label for="veg">Vegetarian</label>
+                        </div>
+                        <div class="radio-option">
+                        <input type="radio" id="nonveg" name="preference" value="Non-Vegetarian">
+                        <label for="nonveg">Non-Vegetarian</label>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="form-group">
+                    <label for="plan">Select Plan</label>
+                    <select id="plan" name="plan" class="form-control" required>
+                        <option value="">-- Choose Plan --</option>
+                        <option value="Daily Tiffin (1 Meal)">Daily Tiffin (1 Meal)</option>
+                        <option value="Monthly Plan (Lunch+Dinner)">Monthly Plan (Lunch+Dinner)</option>
+                        <option value="Custom Plan">Custom Plan</option>
+                    </select>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                    <i class="ti ti-send" style="margin-right: 8px;"></i>
+                    Get Started Now
+                    </button>
+                </form>
+
+                <div class="guarantee-badge">
+                    <i class="ti ti-shield-check" style="color: #27ae60;"></i>
+                    <strong>Hygiene Guarantee:</strong> FSSAI Certified Kitchen | Daily Temperature Checks
                 </div>
+                </div>
+
             </div>
         </div>
     </section>
 
 
+
+
+    <!-- Popup Modal -->
+<div id="popupForm" class="popup-form">
+  <div class="popup-content">
+    <span id="closeFormBtn" class="close-btn">&times;</span>
+
+    <h3 style="color: #2c3e50; margin-bottom: 20px;">Start Your Tiffin Service</h3>
+
+    <form action="tiffin-form-handler.php" method="POST">
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" name="name" class="form-control" placeholder="Enter your name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Mobile Number</label>
+        <input type="tel" name="phone" class="form-control" placeholder="Enter 10-digit number" required>
+      </div>
+
+      <div class="form-group">
+        <label>Meal Preference</label>
+        <div class="radio-group">
+          <label><input type="radio" name="preference" value="Vegetarian" checked> Vegetarian</label>
+          <label><input type="radio" name="preference" value="Non-Vegetarian"> Non-Vegetarian</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="plan">Select Plan</label>
+        <select name="plan" class="form-control" required>
+          <option value="">-- Choose Plan --</option>
+          <option value="Daily Tiffin (1 Meal)">Daily Tiffin (1 Meal)</option>
+          <option value="Monthly Plan (Lunch+Dinner)">Monthly Plan (Lunch+Dinner)</option>
+          <option value="Custom Plan">Custom Plan</option>
+        </select>
+      </div>
+
+      <button type="submit" class="submit-btn">Get Started Now</button>
+    </form>
+  </div>
+</div>
 
 
 
@@ -1668,43 +1710,25 @@
             });
         </script>
 
-    <script>
-        function showPlanType(planType) {
-            // Hide all plan contents
-            document.querySelectorAll('.pricing-content').forEach(content => {
-                content.classList.remove('active');
+        <script>
+            const openFormBtn = document.getElementById('openFormBtn');
+            const popupForm = document.getElementById('popupForm');
+            const closeFormBtn = document.getElementById('closeFormBtn');
+
+            openFormBtn.addEventListener('click', () => {
+                popupForm.style.display = 'block';
             });
 
-            // Remove active class from all buttons
-            document.querySelectorAll('.pricing-tab').forEach(tab => {
-                tab.classList.remove('active');
+            closeFormBtn.addEventListener('click', () => {
+                popupForm.style.display = 'none';
             });
 
-            // Show the selected plan content
-            document.getElementById(`${planType}-plans`).classList.add('active');
-
-            // Add active class to the clicked button
-            event.currentTarget.classList.add('active');
-        }
-
-        // Add hover effects to meal plans
-        document.querySelectorAll('.meal-plan').forEach(plan => {
-            plan.addEventListener('mouseenter', function () {
-                this.style.transform = 'translateY(-5px)';
-                this.style.boxShadow = '0 10px 25px rgba(0,0,0,0.15)';
+            window.addEventListener('click', (e) => {
+                if (e.target === popupForm) {
+                popupForm.style.display = 'none';
+                }
             });
-
-            plan.addEventListener('mouseleave', function () {
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
-            });
-        });
-
-        // Initialize - show vegetarian plans by default
-        document.addEventListener('DOMContentLoaded', function () {
-            showPlanType('vegetarian');
-        });
-    </script>
+        </script>
 
 
 </body>
