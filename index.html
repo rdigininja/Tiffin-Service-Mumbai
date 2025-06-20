@@ -51,7 +51,48 @@
                 padding: 15px;
                 font-size: 1.2rem;
             }
-    </style>
+
+            /* ======================= */
+                .sliding-bar-container {
+                        overflow: hidden;
+                        white-space: nowrap;
+                        background: #f8f8f8; /* Light gray background */
+                        padding: 10px 0;
+                        margin: 10px 0;
+                        }
+
+                        .sliding-bar {
+                        display: inline-block;
+                        animation: slide 20s linear infinite;
+                        }
+
+                        .sliding-bar span {
+                        display: inline-block;
+                        margin: 0 30px; /* Spacing between items */
+                        font-weight: bold;
+                        color: #333;
+                        position: relative;
+                        }
+
+                        .sliding-bar span:after {
+                        content: "•"; /* Separator between items */
+                        position: absolute;
+                        right: -25px;
+                        color: #ccc;
+                        }
+
+                        @keyframes slide {
+                        0% { transform: translateX(0); }
+                        100% { transform: translateX(-50%); } /* Adjust if needed */
+                        }
+
+                        /* Mobile responsiveness */
+                        @media (max-width: 768px) {
+                        .sliding-bar {
+                            animation: slide 15s linear infinite; /* Faster on mobile */
+                        }
+                        }
+</style>
 </head>
 <body>
    
@@ -147,8 +188,8 @@
 
             <div class="col-md-12 col-lg-6 col-12">
                 <div class="main_banner_text">
-                    <h1>Healthy Tiffin Service in Mumbai</h1>
-                    <p>Experience the convenience of healthy meal delivery with our customizable meal plans. Enjoy delicious, nutritious meals tailored to your dietary preferences.</p>
+                    <h1>Healthyfeast: Premier Online Tiffin Service in Mumbai</h1>
+                    <p style="font-size: 14PX;">In the bustling city of Mumbai, Healthyfeast is your trusted partner for wholesome, home-cooked meals delivered straight to your door. We know city life can be busy. We are dedicated to providing you with the comfort of homemade food. We promise not to compromise on flavour or nutrition.</p>
                     <span class="highlight">Hygienic <span class="main_icon">|</span> Delicious <span class="main_icon">|</span> Affordable</span>
                     <button id="openFormBtn" class="main-button openFormBtn" style="margin-top: 20px;">Book Now</button>
 
@@ -183,10 +224,33 @@
 </section>
 
 
+<div class="sliding-bar-container">
+  <div class="sliding-bar">
+    <span>FSSAI Certified Kitchen</span>
+    <span>On-time Delivery Guarantee</span>
+    <span>1000+ Happy Customers</span>
+    <!-- Repeat for seamless loop -->
+    <span>FSSAI Certified Kitchen</span>
+    <span>On-time Delivery Guarantee</span>
+    <span>1000+ Happy Customers</span>
+    <!-- Repeat for seamless loop -->
+    <span>FSSAI Certified Kitchen</span>
+    <span>On-time Delivery Guarantee</span>
+    <span>1000+ Happy Customers</span>
+    <!-- Repeat for seamless loop -->
+    <span>FSSAI Certified Kitchen</span>
+    <span>On-time Delivery Guarantee</span>
+    <span>1000+ Happy Customers</span>
+  </div>
+</div>
+
+
 <section class="pricing-section">
         <div class="container">
             <div class="pricing-header">
-                <h2 class="txt_heading_2 mb-0">Meal Plans & Pricing</h2>
+                <H2>A Healthy Choice for Every Budget</H2>
+                <P>Eating healthy shouldn't break the bank. That's why we provide healthy tiffins at a low price. This makes it easy to keep a balanced diet without stress.</P>
+                <h3 class="txt_heading_2 mb-0">Tiffin Service Menu Plan</h3>
             </div>
 
             <div class="pricing-tabs">
@@ -213,7 +277,7 @@
                                 </div>
                                 <!-- <p class="delivery-note">*Delivery charges applicable</p> -->
          
-                                <button id="openFormBtn"  class="btn openFormBtn">Order Now</button>
+                                <button id="openFormBtn"  class="btn openFormBtn">Book Now</button>
                             </div>
                         </div>
 
@@ -233,14 +297,14 @@
                                 </div>
                                 <!-- <p class="delivery-note">*Delivery charges applicable</p> -->
 
-                                <div class="packages">
-                                    <!-- <div class="package">
+                                <!-- <div class="packages">
+                                    <div class="package">
                                         <span class="package-name">1 Day Trial</span>
                                         <div class="package-price">
                                             <span class="discounted-price">₹80</span>
                                             <span class="discount">Limited Offer</span>
                                         </div>
-                                    </div> -->
+                                    </div>
                                     <div class="package">
                                         <span class="package-name">3 Days</span>
                                         <div class="package-price">
@@ -273,8 +337,12 @@
                                             <span class="discount">10% OFF</span>
                                         </div>
                                     </div>
+                                </div> -->
+                                
+                                <div class="btn-group-box">
+                                    <button id="openFormBtn" class="btn openFormBtn">Book Now</button>
+                                    <button class="btn view-plan-btn" onclick="window.open('https://wa.me/8180961918?text=Hello%2C%20I%20am%20interested%20in%20your%20tiffin%20service%20plans.%20Please%20share%20details.', '_blank')"> <i class="fa-brands fa-whatsapp"></i> View Tiffin Plans</button>
                                 </div>
-                                <button id="openFormBtn" class="btn openFormBtn">Order Now</button>
                             </div>
                         </div>
 
@@ -294,14 +362,14 @@
                                 </div>
                                 <!-- <p class="delivery-note">*Delivery charges applicable</p> -->
 
-                                <div class="packages">
-                                    <!-- <div class="package">
+                                <!-- <div class="packages">
+                                    <div class="package">
                                         <span class="package-name">1 Day Trial</span>
                                         <div class="package-price">
                                             <span class="discounted-price">₹110</span>
                                             <span class="discount">Limited Offer</span>
                                         </div>
-                                    </div> -->
+                                    </div>
                                     <div class="package">
                                         <span class="package-name">3 Days</span>
                                         <div class="package-price">
@@ -334,8 +402,11 @@
                                             <span class="discount">10% OFF</span>
                                         </div>
                                     </div>
+                                </div> -->
+                               <div class="btn-group-box">
+                                    <button id="openFormBtn" class="btn openFormBtn">Book Now</button>
+                                    <button class="btn view-plan-btn" onclick="window.open('https://wa.me/8180961918?text=Hello%2C%20I%20am%20interested%20in%20your%20tiffin%20service%20plans.%20Please%20share%20details.', '_blank')"> <i class="fa-brands fa-whatsapp"></i> View Tiffin Plans</button>
                                 </div>
-                                <button id="openFormBtn" class="btn openFormBtn">Order Now</button>
                             </div>
                         </div>
 
@@ -354,16 +425,15 @@
                                     <p>1 Gravy Vegetable,1 Dry Vegetable,1 Dal,4 Chapati,1 Rice,1 Salad/Soup,1 Dessert
                                     </p>
                                 </div>
-                                <!-- <p class="delivery-note">*Delivery charges applicable</p> -->
 
-                                <div class="packages">
-                                    <!-- <div class="package">
+                                <!-- <div class="packages">
+                                    <div class="package">
                                         <span class="package-name">1 Day Trial</span>
                                         <div class="package-price">
                                             <span class="discounted-price">₹140</span>
                                             <span class="discount">Limited Offer</span>
                                         </div>
-                                    </div> -->
+                                    </div>
                                     <div class="package">
                                         <span class="package-name">3 Days</span>
                                         <div class="package-price">
@@ -396,8 +466,11 @@
                                             <span class="discount">10% OFF</span>
                                         </div>
                                     </div>
+                                </div> -->
+                                <div class="btn-group-box">
+                                    <button id="openFormBtn" class="btn openFormBtn">Book Now</button>
+                                    <button class="btn view-plan-btn" onclick="window.open('https://wa.me/8180961918?text=Hello%2C%20I%20am%20interested%20in%20your%20tiffin%20service%20plans.%20Please%20share%20details.', '_blank')"> <i class="fa-brands fa-whatsapp"></i> View Tiffin Plans</button>
                                 </div>
-                                <button id="openFormBtn" class="btn openFormBtn">Order Now</button>
                             </div>
                         </div>
 
@@ -416,16 +489,15 @@
                                     <p>1 Saute Salad(100gms), 2 Multigrain Roti, 1 Low Cal Dal, 1 Low Cal Dry Veg, 1
                                         Brown Rice, 1 Soup</p>
                                 </div>
-                                <!-- <p class="delivery-note">*Delivery charges applicable</p> -->
 
-                                <div class="packages">
-                                    <!-- <div class="package">
+                                <!-- <div class="packages">
+                                    <div class="package">
                                         <span class="package-name">1 Day Trial</span>
                                         <div class="package-price">
                                             <span class="discounted-price">₹80</span>
                                             <span class="discount">Limited Offer</span>
                                         </div>
-                                    </div> -->
+                                    </div>
                                     <div class="package">
                                         <span class="package-name">3 Days</span>
                                         <div class="package-price">
@@ -458,8 +530,12 @@
                                             <span class="discount">10% OFF</span>
                                         </div>
                                     </div>
+                                </div> -->
+
+                                <div class="btn-group-box">
+                                    <button id="openFormBtn" class="btn openFormBtn">Book Now</button>
+                                    <button class="btn view-plan-btn" onclick="window.open('https://wa.me/8180961918?text=Hello%2C%20I%20am%20interested%20in%20your%20tiffin%20service%20plans.%20Please%20share%20details.', '_blank')"> <i class="fa-brands fa-whatsapp"></i> View Tiffin Plans</button>
                                 </div>
-                                <button id="openFormBtn" class="btn openFormBtn">Order Now</button>
                             </div>
                         </div>
 
@@ -480,14 +556,14 @@
                                 </div>
                                 <!-- <p class="delivery-note">*Delivery charges applicable</p> -->
 
-                                <div class="packages">
-                                    <!-- <div class="package">
+                                  <!-- <div class="packages">
+                                    <div class="package">
                                         <span class="package-name">1 Day Trial</span>
                                         <div class="package-price">
                                             <span class="discounted-price">₹80</span>
                                             <span class="discount">Limited Offer</span>
                                         </div>
-                                    </div> -->
+                                    </div>
                                     <div class="package">
                                         <span class="package-name">3 Days</span>
                                         <div class="package-price">
@@ -520,8 +596,13 @@
                                             <span class="discount">10% OFF</span>
                                         </div>
                                     </div>
+                                </div> -->
+                                
+                                <div class="btn-group-box">
+                                    <button id="openFormBtn" class="btn openFormBtn">Book Now</button>
+                                    <button class="btn view-plan-btn" onclick="window.open('https://wa.me/8180961918?text=Hello%2C%20I%20am%20interested%20in%20your%20tiffin%20service%20plans.%20Please%20share%20details.', '_blank')"> <i class="fa-brands fa-whatsapp"></i> View Tiffin Plans</button>
                                 </div>
-                                <button id="openFormBtn" class="btn openFormBtn">Order Now</button>
+
                             </div>
                         </div>
 
@@ -871,7 +952,7 @@
         </div>
 </section>
 
-<section class="timeline__cover">
+    <section class="timeline__cover">
                 <div class="timeline__title">
                     <h2>How It Works</h2>
                 </div>            
@@ -881,41 +962,61 @@
                         <li>
                             <div class="content hidden" style="opacity: 1;">
                                 <div class="badge">STEP 1</div>
-                                <h3>Choose Your Plan</h3>
-                                <p>Select a subscription plan that fits your schedule and preferences.</p>  
+                                <h3>Select Your Meal Plan</h3>
+                                <p>Browse our flexible meal options – choose from Veg, Jain, Healthy, or Customized tiffin plans. Available on daily, weekly, or monthly subscriptions.</p>  
                             </div>
                         </li>
                         <li>
                             <div class="content hidden" style="opacity: 1;">
                                 <div class="badge">STEP 2</div>
-                                <h3>Select/Customize Your Meals</h3>
-                                <p>Mix and match dishes to create your perfect meal plan for the week.</p>
+                                <h3>Place Your Order</h3>
+                                <p>Order online in just a few clicks. Sign up and choose your preferred delivery schedule for lunch, dinner, or both. No calls, no hassle.S</p>
                             </div>
                         </li>
                         <li>
                             <div class="content hidden" style="opacity: 1;">
                                 <div class="badge">STEP 3</div>
-                                <h3>Enjoy</h3>
-                                <p>Simple heat and enjoy your authentic Indian meal, hassle-free!</p>
+                                <h3>Fresh Meals, Cooked Daily</h3>
+                                <p>Our chefs prepare meals every morning using fresh, local ingredients – just like home. Every tiffin is balanced, hygienic, and preservative-free.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content hidden" style="opacity: 1;">
+                                <div class="badge">STEP 4</div>
+                                <h3>On-Time Delivery, Every Time</h3>
+                                <p>We deliver hot tiffins across Mumbai – home, office, or college. Our intelligent routing ensures your meal reaches you on time, every time.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content hidden" style="opacity: 1;">
+                                <div class="badge">STEP 5</div>
+                                <h3>Eat Well, Live Better</h3>
+                                <p>Enjoy a rotating menu of tasty dishes that never get boring. Unbox your meal and enjoy that ghar ka khana feeling – no cooking, no stress.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content hidden" style="opacity: 1;">
+                                <div class="badge">STEP 6</div>
+                                <h3>Pause, Switch, or Cancel Anytime</h3>
+                                <p>Plans change? No worries. You can easily pause, reschedule, or change your meal type through your account dashboard or WhatsApp support.</p>
                             </div>
                         </li>
                     </ul>
-        </div>
+                </div>
     </section>
 
 
  <section>
         <div class="container">
             <div class="why_section">
-                <h2 class="why_title">Why Choose Us?</h2>
+                <h2 class="why_title">Why Choose Our Tiffin Service in Mumbai?</h2>
                 <div class="row">
                     <div class="col-md-6 col-lg-6 col-12">
                         <div class="why_box">
                             <div class="why-img"><img src="img/icon/balanced-diet - Copy.svg" alt=""></div>
                             <div>
-                                <h3>Authentic Home-Style Cooking </h3>
-                                <p>Traditional recipes passed down through generations for that unforgettable taste of
-                                    home.</p>
+                                <h3>Home-Cooked Goodness</h3>
+                                <p>All our meals are made fresh every day in clean kitchens. We use quality ingredients and authentic home-style recipes, just like mom makes.</p>
                             </div>
                         </div>
                     </div>
@@ -923,9 +1024,8 @@
                         <div class="why_box">
                             <div class="why-img"><img src="img/icon/delivery-man (1).svg" alt=""></div>
                             <div>
-                                <h3>Convenient, Hyperlocal Delivery </h3>
-                                <p>Daily delivery across Andheri, Powai, Marol, Worli, and BKC, ensuring hot meals,
-                                    right on time</p>
+                                <h3>Reliable & On-Time Delivery</h3>
+                                <p>We understand your busy schedule. Our delivery team ensures your hot tiffin reaches you on time, whether at home, office, or college – across Mumbai.</p>
                             </div>
                         </div>
                     </div>
@@ -933,8 +1033,8 @@
                         <div class="why_box">
                             <div class="why-img"><img src="img/icon/masala-dosa.svg" alt=""></div>
                             <div>
-                                <h3>Affordable & Flexible Plans </h3>
-                                <p>Enjoy wholesome meals without breaking the bank. Plans start at just ₹XX/day!</p>
+                                <h3>Daily-Changing Menu</h3>
+                                <p>No more boring meals! Our menus are thoughtfully crafted and rotated regularly, so you enjoy variety without compromise.</p>
                             </div>
                         </div>
                     </div>
@@ -942,9 +1042,8 @@
                         <div class="why_box">
                             <div class="why-img"><img src="img/icon/stir-fry.svg" alt=""></div>
                             <div>
-                                <h3>Hygienic & Sustainable</h3>
-                                <p>Meals prepared in a clean, safe environment and packed with eco-friendly materials.
-                                </p>
+                                <h3>Flexible Plans</h3>
+                                <p>Choose from daily, weekly, or monthly plans. Skip a day, pause your subscription, or switch from lunch to dinner anytime – zero hassle</p>
                             </div>
                         </div>
                     </div>
@@ -952,9 +1051,28 @@
                         <div class="why_box">
                             <div class="why-img"><img src="img/icon/cooking.svg" alt=""></div>
                             <div>
-                                <h3>Customizable Meal Plans</h3>
-                                <p>Vegetarian, non-vegetarian, low-carb, or high-protein—we tailor every meal to suit
-                                    your needs.</p>
+                                <h3>Perfect for Professionals & Students</h3>
+                                <p>Designed to meet the needs of working professionals, students, and seniors, our tiffins are nutritious, affordable, and perfectly portioned.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-12">
+                        <div class="why_box">
+                            <div class="why-img"><img src="img/icon/cooking.svg" alt=""></div>
+                            <div>
+                                <h3>Easy Ordering & Support</h3>
+                                <p>Order through our website, app, or WhatsApp in seconds. Got questions? Our customer support is always just a message away.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-12">
+                        <div class="why_box">
+                            <div class="why-img"><img src="img/icon/cooking.svg" alt=""></div>
+                            <div>
+                                <h3>Affordable & Transparent Pricing</h3>
+                                <p>There are no hidden charges and no delivery surprises—just honest pricing for honest food.</p>
                             </div>
                         </div>
                     </div>
