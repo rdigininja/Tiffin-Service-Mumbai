@@ -1682,7 +1682,30 @@ header{
 
 
 
+/* ==================== */
 
+.for_heading{
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.for_img{
+    width: 40px;
+    /* display: none; */
+}
+
+.for_box{
+    padding: 20px;
+}
+
+.for_box:hover .for_img{
+    /* display: inline; */
+    margin-right: 10px;
+}
+
+.for_box:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
 
 
