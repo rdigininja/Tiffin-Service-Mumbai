@@ -8,7 +8,7 @@
 }
 
 body{
-     font-family: "Poppins", sans-serif;
+     font-family: "Poppins", sans-serif !important;
 }
 
 .main-logo  {
@@ -36,6 +36,22 @@ body{
     font-weight: 800;
     padding-bottom: 20px;
     text-align: center;
+}
+
+.txt_heading_h3{
+    font-family: 'poppins';
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.para_price{
+    font-size: 16px;
+}
+
+@media screen and (max-width: 550px) {
+.txt_heading_h3{
+    font-size: 16px;
+}
 }
 
 .txt_top_header{
@@ -1726,7 +1742,7 @@ header{
                 .sliding-bar span {
                     display: inline-block;
                     margin: 0 30px; /* Spacing between items */
-                    font-weight: bold;
+                    font-weight: 500;
                     color: #ffffff;
                     position: relative;
                 }
