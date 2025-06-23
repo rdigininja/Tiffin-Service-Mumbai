@@ -1709,4 +1709,47 @@ header{
 
 
 
+            /* ======================= */
+                .sliding-bar-container {
+                    overflow: hidden;
+                    white-space: nowrap;
+                    background: #18681c; /* Light gray background */
+                    padding: 10px 0;
+                    margin: 0px 0;
+                }
+
+                .sliding-bar {
+                    display: inline-block;
+                    animation: slide 20s linear infinite;
+                }
+
+                .sliding-bar span {
+                    display: inline-block;
+                    margin: 0 30px; /* Spacing between items */
+                    font-weight: bold;
+                    color: #ffffff;
+                    position: relative;
+                }
+
+                .sliding-bar span:after {
+                    content: "•"; /* Separator between items */
+                    position: absolute;
+                    right: -25px;
+                    color: #ffffff;
+                }
+
+                @keyframes slide {
+                    0% { transform: translateX(0); }
+                    100% { transform: translateX(-50%); } /* Adjust if needed */
+                }
+
+                /* Mobile responsiveness */
+                    @media (max-width: 768px) {
+                        .sliding-bar {
+                            animation: slide 15s linear infinite; /* Faster on mobile */
+                        }
+                    }
+
+
+
 
